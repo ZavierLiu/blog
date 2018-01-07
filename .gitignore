@@ -1,0 +1,9 @@
+#生成的class文件
+blog/WebContent/WEB-INF/classes/
+
+#tomcat生成的work文件夹
+blog/work
+
+#jdbc数据库连接账号密码等相关信息
+jdbc.properties
+
