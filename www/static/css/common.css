@@ -19,6 +19,14 @@ body {
 	text-align: center;
 }
 
+.pull-right {
+	float: right;
+}
+
+.pull-left {
+	float: left;
+}
+
 .zavier-icon {
 	font-family: "zavierfont" !important;
 	font-size: 16px;
@@ -137,9 +145,13 @@ body {
 
 .layui-body {
 	transition: left 0.5s;
+	padding: 15px;
 }
 
 .layui-layout-admin .layui-body {
-	top: 60px;
 	bottom: 0px;
+}
+
+.layui-form-item .layui-inline {
+	margin-bottom: 0px;
 }
