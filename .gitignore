@@ -5,5 +5,5 @@ blog/WebContent/WEB-INF/classes/
 blog/work
 
 #jdbc数据库连接账号密码等相关信息
-jdbc.properties
+blog/src/main/resources/jdbc.properties
 
