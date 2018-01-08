@@ -21,47 +21,59 @@
 			<%@include file="../side.jsp"%>
 
 			<div class="layui-body">
-				<div class="layui-form">
-					<div class="layui-form-item">
-						<div class="layui-inline">
-							<div class="layui-form-label">文章标题</div>
-							<div class="layui-input-inline">
-								<input type="text" name="price_min" class="layui-input" autocomplete="off">
+				<div class="zavier-list" style="display: none;">
+					<div class="layui-form">
+						<div class="layui-form-item">
+							<div class="layui-inline">
+								<div class="layui-form-label">文章标题</div>
+								<div class="layui-input-inline">
+									<input type="text" name="title" class="layui-input" autocomplete="off">
+								</div>
 							</div>
-						</div>
-						<div class="layui-inline">
-							<div class="layui-form-label">文章标题</div>
-							<div class="layui-input-inline">
-								<input type="text" name="price_min" class="layui-input" autocomplete="off">
+							<div class="layui-inline">
+								<div class="layui-form-label">文章标题</div>
+								<div class="layui-input-inline">
+									<input type="text" name="price_min" class="layui-input" autocomplete="off">
+								</div>
 							</div>
-						</div>
-						<div class="layui-inline">
-							<div class="layui-form-label">文章标题</div>
-							<div class="layui-input-inline">
-								<input type="text" name="price_min" class="layui-input" autocomplete="off">
+							<div class="layui-inline">
+								<div class="layui-form-label">文章标题</div>
+								<div class="layui-input-inline">
+									<input type="text" name="price_min" class="layui-input" autocomplete="off">
+								</div>
 							</div>
+							<div class="layui-btn pull-right"><i class="layui-icon">&#xe615;</i>查找</div>
+							<div class="layui-clear"></div>
 						</div>
-						<div class="layui-btn pull-right"><i class="layui-icon">&#xe615;</i>查找</div>
-						<div class="layui-clear"></div>
 					</div>
+					<hr />
+					<table class="table table-bordered" id="table" class="display" cellspacing="0" width="100%">
+						<thead>
+							<tr>
+								<th data-number="true"></th>
+								<th data-checkbox="true"></th>
+								<th data-field="title">文章标题</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+					</table>
 				</div>
-				<hr />
-				<table class="table table-bordered" id="table" class="display" cellspacing="0" width="100%">
-					<thead>
-						<tr>
-							<th data-number="true"></th>
-							<th data-checkbox="true"></th>
-							<th data-field="title">文章标题</th>
-							<th>操作</th>
-						</tr>
-					</thead>
-				</table>
-				<script id="container" name="content" type="text/plain">
-					这里写你的初始化内容
-				</script>
-				<script type="text/javascript">
-					var ue = UE.getEditor('container');
-				</script>
+				<div class="zavier-edit">
+					<div class="layui-inline" style="width: 48%;height: 300px;border: 1px solid;"></div>
+					<div class="layui-inline" style="width: 2px;height: 300px;border: 1px solid;"></div>
+					<div class="layui-inline" style="width: 48%;height: 300px;border: 1px solid;"></div>
+					<div class="layui-form">
+						<div class="layui-form-item">
+							<div class="layui-form-label">文章标题</div>
+							<div class="layui-input-inline">
+								<input class="layui-input" />
+							</div>
+						</div>
+					</div>
+					<script id="container" name="content" type="text/plain">
+						这里写你的初始化内容
+					</script>
+				</div>
 			</div>
 		</div>
 		<%@include file="../footer.jsp"%>

@@ -1,4 +1,4 @@
-render = function($el) {
+sideRender = function($el) {
 	//初始化滚动区高度
 	var scrollHeight = $el.height() - $el.find('.zavier-side-toggle').height();
 	$el.find('.zavier-side-scroll').css('height', scrollHeight);
@@ -21,7 +21,7 @@ render = function($el) {
 	});
 
 	//点击展开收起侧边栏
-	$el.find('.zavier-side-toggle').bind('click', function() {
+	$el.find('.zavier-side-toggle').bind('click', function(callback) {
 		$el.toggleClass('zavier-side-mini');
 		$('.layui-body').css('left', $el.hasClass('zavier-side-mini') ? '50px' : '200px');
 	});
@@ -47,4 +47,3 @@ render = function($el) {
 		layer.close(index);
 	});
 }
-render($('.zavier-side'));
